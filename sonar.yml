@@ -1,4 +1,4 @@
-Enter f- name: install trivy
+- name: install trivy
   run: |
     #install trivy
     sudo apt-get install wget apt-transport-https gnupg lsb-release -y
@@ -7,4 +7,4 @@ Enter f- name: install trivy
     sudo apt-get update
     sudo apt-get install trivy -y
     #command to scan files
-    trivy fs .ile contents here
+    trivy fs .file contents here
