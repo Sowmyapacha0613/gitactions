@@ -31,7 +31,7 @@ jobs:
         
           #run commands to build and push docker images
           docker build --build-arg TMDB_V3_API_KEY=<19c42389b025edf9d4c89e0158cc733f> -t netflix .
-          docker tag netflix Sowmyapacha/netflix:latest
+          docker tag netflix Sowmyapacha/gitactions:latest
           docker login -u ${{ secrets.DOCKERHUB_USERNAME }} -p ${{ secrets.DOCKERHUB_TOKEN }}
           docker push Sowmyapacha/netflix:latest
         env:
